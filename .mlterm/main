@@ -15,7 +15,7 @@ logsize=4096
 # nice for i3, but what about others?
 borderless = true
 emoji = Noto Color Emoji
-fade_ratio = 70
+fade_ratio = 80
 # System specific, but will be overrriden by command line
 emoji_path=/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
 termtype=xterm-256color

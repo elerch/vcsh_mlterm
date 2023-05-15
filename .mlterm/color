@@ -13,7 +13,15 @@
 # https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master
 # Use the freebsd_vt config files as it allows some relatively easy vi changes
 # FirefoxDev
-0 = #002831
+# Black is...too black. We're working on a black background...so this one
+# is tough and we don't have a real good example theme to draw from.
+# We'll go with 49656C/6D8489, with white being 7c8fa4. It is fairly subtle
+# between black highlight and white normal. To see the difference:
+# echo '\e[0;30mblack | \e[1;30mblackhl | \e[0;37mwhite | \e[1;37mwhitehl'
+# Used https://www.calculators.org/math/colors.php to create a 6 step blend
+# of #002831 with pure white #ffffff to get values
+#0 = #002831
+0 = #49656C
 1 = #e63853
 2 = #5eb83c
 # I don't like the yellow from FirefoxDev. Taking from Wez
@@ -23,7 +31,8 @@
 5 = #d75cff
 6 = #4b73a2
 7 = #7c8fa4
-8 = #001e27
+# 8 = #001e27
+8 = #6D8489
 9 = #e1003f
 10 = #1d9000
 # 11 = #cd9409
