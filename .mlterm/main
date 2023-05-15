@@ -1,0 +1,26 @@
+# alpha doesn't see to be working?
+depth = 32
+alpha = 150 
+# use pseudo transparent background - turn off for true
+use_transbg = true
+wall_picture = 
+tabsize = 4
+fontsize = 14
+use_anti_alias = true
+type_engine = xft
+use_clipboard = true
+scrollbar_mode = none
+scrollbar_view_name = mozmodern
+logsize=4096
+# nice for i3, but what about others?
+borderless = true
+emoji = Noto Color Emoji
+fade_ratio = 70
+# System specific, but will be overrriden by command line
+emoji_path=/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+termtype=xterm-256color
+
+# These colors seem to be here, while color is reserved for terminal colors
+fg_color = #bbbbbb
+bg_color = #020202
+

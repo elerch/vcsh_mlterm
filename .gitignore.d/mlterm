@@ -1,0 +1,10 @@
+*
+!/.gitignore.d/mlterm
+!/.mlterm/aafont
+!/.mlterm/challenge
+!/.mlterm/color
+!/.mlterm/key
+!/.mlterm/main
+!/.mlterm/msg.log
+!/.mlterm/pts_0.six
+!/.mlterm/pts_12.six

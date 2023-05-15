@@ -1,0 +1,93 @@
+# 0 black    8 hl_black
+# 1 red      9
+# 2 green    10
+# 3 yellow   11
+# 4 bloe
+# 5 magenta
+# 6 cyan
+# 7 white
+
+# This is a good green
+# green=#B1D88D
+
+# https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master
+# Use the freebsd_vt config files as it allows some relatively easy vi changes
+# FirefoxDev
+0 = #002831
+1 = #e63853
+2 = #5eb83c
+# I don't like the yellow from FirefoxDev. Taking from Wez
+# 3 = #a57706
+3 = #cdcd55
+4 = #359ddf
+5 = #d75cff
+6 = #4b73a2
+7 = #7c8fa4
+8 = #001e27
+9 = #e1003f
+10 = #1d9000
+# 11 = #cd9409
+11 = #ffff55
+12 = #006fc0
+13 = #a200da
+14 = #005794
+15 = #e2e2e2
+
+# Mathias
+# Molokai
+# Monokai Remastered
+# Wez
+# Zenwritten Dark
+
+
+# black=#121212
+# red=#7325FA
+# green=#B1D88D
+# yellow=#60D4DF
+# blue=#D08010
+# magenta=#FF0087
+# cyan=#D0A843
+# white=#BBBBBB
+# hl_black=#555555
+# hl_red=#9D66F6
+# hl_green=#5FE0B1
+# hl_yellow=#6DF2FF
+# hl_blue=#FFAF00
+# hl_magenta=#FF87AF
+# hl_cyan=#FFCE51
+# hl_white=#FFFFFF
+
+fg_color=#BBBBBB
+bg_color=#121212
+cursor_bg_color=#BBBBBB
+cursor_fg_color=#FFFFFF
+bd_color=#FFFFFF
+it_color=#000000
+ul_color=#FFD5B5
+
+# From st
+##"black",
+##"red3",
+##"green3",
+##"yellow3",
+##"blue2",
+##"magenta3",
+##"cyan3",
+##"gray90",
+
+##/* 8 bright colors */
+##"gray50",
+##"red",
+##"green",
+##"yellow",
+##"#5c5cff",
+##"magenta",
+##"cyan",
+##"white",
+
+##[255] = 0,
+
+##/* more colors can be added after 255 to use with DefaultXX */
+##"#cccccc",
+##"#555555",
+##"black",
