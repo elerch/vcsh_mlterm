@@ -1,21 +1,42 @@
-# alpha doesn't see to be working?
+# alpha is on a 0-255 scale, and will not work unless depth is at 32
 depth = 32
 alpha = 150 
-# use pseudo transparent background - turn off for true
-use_transbg = true
+# use_transbg = false will use "true transparency", which seems to work for me
+# the alternative is pseudo transparency, though I have not investigated the
+# difference
+use_transbg = false
 wall_picture = 
 tabsize = 4
+
+# This was set by the UI, while the fonts config file aafont also has a font
+# size that works just fine. I suspect this is a dead config option
 fontsize = 14
+
 use_anti_alias = true
 type_engine = xft
+
+# mlterm does not use Ctrl-Shift-C, but rather copies to PRIMARY
+# on selection. If use_clipboard, it also copies to CLIPBOARD. Without the
+# keyboard shortcut, I find turning this on to be more useful
 use_clipboard = true
+
+# I don't need scrollbars. Shift+Pg Up works fine
 scrollbar_mode = none
+
+# If I do enable them, mozmodern sounds nice
 scrollbar_view_name = mozmodern
+
+# Crank up the logs
 logsize=4096
+
 # nice for i3, but what about others?
 borderless = true
 emoji = Noto Color Emoji
+
+# This is the ratio of making things dim when you move away. Too dim, and
+# you can't look back for reference
 fade_ratio = 80
+
 # System specific, but will be overrriden by command line
 emoji_path=/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
 termtype=xterm-256color
@@ -23,4 +44,3 @@ termtype=xterm-256color
 # These colors seem to be here, while color is reserved for terminal colors
 fg_color = #bbbbbb
 bg_color = #020202
-
