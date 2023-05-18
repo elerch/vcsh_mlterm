@@ -1,1 +1,195 @@
-DEFAULT = Hack Nerd Font Mono 15:110
+# DEFAULT = Hack Nerd Font Mono 15:110
+ISO10646_UCS4_1 = Hack Nerd Font Mono 15:110
+# Fira code is an ugly font IMHO, but it's cool to see ligature support
+# (use the -otl option when starting mlterm, or 'use_ot_layout' in config)
+#ISO10646_UCS4_1 = Fira Code 15:110
+
+# For debian bullseye, this is likely the set of emojis:
+# https://emojipedia.org/google/android-11.0
+#
+# Code points without a variation (e.g. U+FE0F) seem to be fine
+# with a variation. The variation character needs to be removed,
+# but we have to have to set variable column width option.
+#
+# You can produce this list with:
+#
+# for range in `fc-match --format='%{charset}\n' 'Noto Color Emoji'`; do
+#   echo U+${range}=Noto Color Emoji 15:110 >> ~/.mlterm/aafont-emoji
+# done
+#
+# Then use vim to copy these over. Advantage is that you get the complete
+# range of characters
+#
+# To find which fonts support a specific character, you can use:
+# fc-list :charset=<codepoint>
+#
+# for example: fc-list :charset=2713
+# gives all the fonts that support the unicode checkmark character
+# TODO: program to go through range and create static fallback?
+
+U+20=Noto Color Emoji 15:110
+U+23=Noto Color Emoji 15:110
+U+2a=Noto Color Emoji 15:110
+U+30-39=Noto Color Emoji 15:110
+U+a9=Noto Color Emoji 15:110
+U+ae=Noto Color Emoji 15:110
+U+200d=Noto Color Emoji 15:110
+U+203c=Noto Color Emoji 15:110
+U+2049=Noto Color Emoji 15:110
+U+20e3=Noto Color Emoji 15:110
+U+2122=Noto Color Emoji 15:110
+U+2139=Noto Color Emoji 15:110
+U+2194-2199=Noto Color Emoji 15:110
+U+21a9-21aa=Noto Color Emoji 15:110
+U+231a-231b=Noto Color Emoji 15:110
+U+2328=Noto Color Emoji 15:110
+U+23cf=Noto Color Emoji 15:110
+U+23e9-23f3=Noto Color Emoji 15:110
+U+23f8-23fa=Noto Color Emoji 15:110
+U+24c2=Noto Color Emoji 15:110
+U+25aa-25ab=Noto Color Emoji 15:110
+U+25b6=Noto Color Emoji 15:110
+U+25c0=Noto Color Emoji 15:110
+U+25fb-25fe=Noto Color Emoji 15:110
+U+2600-2604=Noto Color Emoji 15:110
+U+260e=Noto Color Emoji 15:110
+U+2611=Noto Color Emoji 15:110
+U+2614-2615=Noto Color Emoji 15:110
+U+2618=Noto Color Emoji 15:110
+U+261d=Noto Color Emoji 15:110
+U+2620=Noto Color Emoji 15:110
+U+2622-2623=Noto Color Emoji 15:110
+U+2626=Noto Color Emoji 15:110
+U+262a=Noto Color Emoji 15:110
+U+262e-262f=Noto Color Emoji 15:110
+U+2638-263a=Noto Color Emoji 15:110
+U+2640=Noto Color Emoji 15:110
+U+2642=Noto Color Emoji 15:110
+U+2648-2653=Noto Color Emoji 15:110
+U+265f-2660=Noto Color Emoji 15:110
+U+2663=Noto Color Emoji 15:110
+U+2665-2666=Noto Color Emoji 15:110
+U+2668=Noto Color Emoji 15:110
+U+267b=Noto Color Emoji 15:110
+U+267e-267f=Noto Color Emoji 15:110
+U+2692-2697=Noto Color Emoji 15:110
+U+2699=Noto Color Emoji 15:110
+U+269b-269c=Noto Color Emoji 15:110
+U+26a0-26a1=Noto Color Emoji 15:110
+U+26a7=Noto Color Emoji 15:110
+U+26aa-26ab=Noto Color Emoji 15:110
+U+26b0-26b1=Noto Color Emoji 15:110
+U+26bd-26be=Noto Color Emoji 15:110
+U+26c4-26c5=Noto Color Emoji 15:110
+U+26c8=Noto Color Emoji 15:110
+U+26ce-26cf=Noto Color Emoji 15:110
+U+26d1=Noto Color Emoji 15:110
+U+26d3-26d4=Noto Color Emoji 15:110
+U+26e9-26ea=Noto Color Emoji 15:110
+U+26f0-26f5=Noto Color Emoji 15:110
+U+26f7-26fa=Noto Color Emoji 15:110
+U+26fd=Noto Color Emoji 15:110
+U+2702=Noto Color Emoji 15:110
+U+2705=Noto Color Emoji 15:110
+U+2708-270d=Noto Color Emoji 15:110
+U+270f=Noto Color Emoji 15:110
+U+2712=Noto Color Emoji 15:110
+U+2714=Noto Color Emoji 15:110
+U+2716=Noto Color Emoji 15:110
+U+271d=Noto Color Emoji 15:110
+U+2721=Noto Color Emoji 15:110
+U+2728=Noto Color Emoji 15:110
+U+2733-2734=Noto Color Emoji 15:110
+U+2744=Noto Color Emoji 15:110
+U+2747=Noto Color Emoji 15:110
+U+274c=Noto Color Emoji 15:110
+U+274e=Noto Color Emoji 15:110
+U+2753-2755=Noto Color Emoji 15:110
+U+2757=Noto Color Emoji 15:110
+U+2763-2764=Noto Color Emoji 15:110
+U+2795-2797=Noto Color Emoji 15:110
+U+27a1=Noto Color Emoji 15:110
+U+27b0=Noto Color Emoji 15:110
+U+27bf=Noto Color Emoji 15:110
+U+2934-2935=Noto Color Emoji 15:110
+U+2b05-2b07=Noto Color Emoji 15:110
+U+2b1b-2b1c=Noto Color Emoji 15:110
+U+2b50=Noto Color Emoji 15:110
+U+2b55=Noto Color Emoji 15:110
+U+3030=Noto Color Emoji 15:110
+U+303d=Noto Color Emoji 15:110
+U+3297=Noto Color Emoji 15:110
+U+3299=Noto Color Emoji 15:110
+U+1f004=Noto Color Emoji 15:110
+U+1f0cf=Noto Color Emoji 15:110
+U+1f170-1f171=Noto Color Emoji 15:110
+U+1f17e-1f17f=Noto Color Emoji 15:110
+U+1f18e=Noto Color Emoji 15:110
+U+1f191-1f19a=Noto Color Emoji 15:110
+U+1f1e6-1f1ff=Noto Color Emoji 15:110
+U+1f201-1f202=Noto Color Emoji 15:110
+U+1f21a=Noto Color Emoji 15:110
+U+1f22f=Noto Color Emoji 15:110
+U+1f232-1f23a=Noto Color Emoji 15:110
+U+1f250-1f251=Noto Color Emoji 15:110
+U+1f300-1f321=Noto Color Emoji 15:110
+U+1f324-1f393=Noto Color Emoji 15:110
+U+1f396-1f397=Noto Color Emoji 15:110
+U+1f399-1f39b=Noto Color Emoji 15:110
+U+1f39e-1f3f0=Noto Color Emoji 15:110
+U+1f3f3-1f3f5=Noto Color Emoji 15:110
+U+1f3f7-1f4fd=Noto Color Emoji 15:110
+U+1f4ff-1f53d=Noto Color Emoji 15:110
+U+1f549-1f54e=Noto Color Emoji 15:110
+U+1f550-1f567=Noto Color Emoji 15:110
+U+1f56f-1f570=Noto Color Emoji 15:110
+U+1f573-1f57a=Noto Color Emoji 15:110
+U+1f587=Noto Color Emoji 15:110
+U+1f58a-1f58d=Noto Color Emoji 15:110
+U+1f590=Noto Color Emoji 15:110
+U+1f595-1f596=Noto Color Emoji 15:110
+U+1f5a4-1f5a5=Noto Color Emoji 15:110
+U+1f5a8=Noto Color Emoji 15:110
+U+1f5b1-1f5b2=Noto Color Emoji 15:110
+U+1f5bc=Noto Color Emoji 15:110
+U+1f5c2-1f5c4=Noto Color Emoji 15:110
+U+1f5d1-1f5d3=Noto Color Emoji 15:110
+U+1f5dc-1f5de=Noto Color Emoji 15:110
+U+1f5e1=Noto Color Emoji 15:110
+U+1f5e3=Noto Color Emoji 15:110
+U+1f5e8=Noto Color Emoji 15:110
+U+1f5ef=Noto Color Emoji 15:110
+U+1f5f3=Noto Color Emoji 15:110
+U+1f5fa-1f64f=Noto Color Emoji 15:110
+U+1f680-1f6c5=Noto Color Emoji 15:110
+U+1f6cb-1f6d2=Noto Color Emoji 15:110
+U+1f6d5-1f6d7=Noto Color Emoji 15:110
+U+1f6e0-1f6e5=Noto Color Emoji 15:110
+U+1f6e9=Noto Color Emoji 15:110
+U+1f6eb-1f6ec=Noto Color Emoji 15:110
+U+1f6f0=Noto Color Emoji 15:110
+U+1f6f3-1f6fc=Noto Color Emoji 15:110
+U+1f7e0-1f7eb=Noto Color Emoji 15:110
+U+1f90c-1f93a=Noto Color Emoji 15:110
+U+1f93c-1f945=Noto Color Emoji 15:110
+U+1f947-1f978=Noto Color Emoji 15:110
+U+1f97a-1f9cb=Noto Color Emoji 15:110
+U+1f9cd-1f9ff=Noto Color Emoji 15:110
+U+1fa70-1fa74=Noto Color Emoji 15:110
+U+1fa78-1fa7a=Noto Color Emoji 15:110
+U+1fa80-1fa86=Noto Color Emoji 15:110
+U+1fa90-1faa8=Noto Color Emoji 15:110
+U+1fab0-1fab6=Noto Color Emoji 15:110
+U+1fac0-1fac2=Noto Color Emoji 15:110
+U+1fad0-1fad6=Noto Color Emoji 15:110
+U+e0030-e0039=Noto Color Emoji 15:110
+U+e0061-e007a=Noto Color Emoji 15:110
+U+e007f=Noto Color Emoji 15:110
+U+fe4e5-fe4ee=Noto Color Emoji 15:110
+U+fe82c=Noto Color Emoji 15:110
+U+fe82e-fe837=Noto Color Emoji 15:110
+
+U+2713=Noto Sans Symbols2 15:110
+# U+2713=Symbola 15:110
+# U+2713=DejaVu Sans Mono 15:110
+# U+2713=Unifont 15:110

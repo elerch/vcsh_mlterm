@@ -13,6 +13,8 @@ tabsize = 4
 fontsize = 14
 
 use_anti_alias = true
+# font fallback seems possible in cairo (how?) but maybe not in xft
+# However, cairo display is really wonky
 type_engine = xft
 
 # mlterm does not use Ctrl-Shift-C, but rather copies to PRIMARY
@@ -31,14 +33,21 @@ logsize=4096
 
 # nice for i3, but what about others?
 borderless = true
+
+# emojis: this setting doesn't seem to do everything...see aafont
+# file for much more information
+# I think "emoji" here is a dead setting, and emoji_path is correct.
+# If it isn't the right path, overwrite with command line --emoji option
 emoji = Noto Color Emoji
+emoji_path=/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+# some emojis are wide, and this fixes that problem
+use_variable_column_width = true
 
 # This is the ratio of making things dim when you move away. Too dim, and
 # you can't look back for reference
 fade_ratio = 80
 
 # System specific, but will be overrriden by command line
-emoji_path=/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
 termtype=xterm-256color
 
 # These colors seem to be here, while color is reserved for terminal colors
