@@ -17,6 +17,9 @@ ISO10646_UCS4_1 = Hack Nerd Font Mono 15:110
 #   echo U+${range}=Noto Color Emoji 15:110 >> ~/.mlterm/aafont-emoji
 # done
 #
+# Or even better:
+# zig-out/bin/fontfinder -f "Hack Nerd Font Mono,DejaVu Sans Mono,Noto Color Emoji" -o range |grep -v Hack |sed 's/$/ 15:110/' > ~/.mlterm/aafont-nohack
+#
 # Then use vim to copy these over. Advantage is that you get the complete
 # range of characters
 #
@@ -25,7 +28,12 @@ ISO10646_UCS4_1 = Hack Nerd Font Mono 15:110
 #
 # for example: fc-list :charset=2713
 # gives all the fonts that support the unicode checkmark character
-# TODO: program to go through range and create static fallback?
+# For checkmark, I like the following order.
+# Noto Sans Symbols2 is not a mono font, but we will go for it
+#U+2713=Noto Sans Symbols2 15:110
+# U+2713=Symbola 15:110
+# U+2713=DejaVu Sans Mono 15:110
+# U+2713=Unifont 15:110
 
 U+20=Noto Color Emoji 15:110
 U+23=Noto Color Emoji 15:110
@@ -189,7 +197,3 @@ U+fe4e5-fe4ee=Noto Color Emoji 15:110
 U+fe82c=Noto Color Emoji 15:110
 U+fe82e-fe837=Noto Color Emoji 15:110
 
-U+2713=Noto Sans Symbols2 15:110
-# U+2713=Symbola 15:110
-# U+2713=DejaVu Sans Mono 15:110
-# U+2713=Unifont 15:110
