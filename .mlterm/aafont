@@ -18,7 +18,7 @@ ISO10646_UCS4_1 = Hack Nerd Font Mono 15:110
 # done
 #
 # Or even better:
-# zig-out/bin/fontfinder -f "Hack Nerd Font Mono,DejaVu Sans Mono,Noto Color Emoji" -o range |grep -v Hack |sed 's/$/ 15:110/' > ~/.mlterm/aafont-nohack
+# zig-out/bin/fontfinder -f "Hack Nerd Font Mono,Noto Sans Symbols2,DejaVu Sans Mono,Noto Color Emoji" -o range |grep -v Hack |sed 's/$/ 15:110/' > ~/.mlterm/aafont-nohack
 #
 # Then use vim to copy these over. Advantage is that you get the complete
 # range of characters
