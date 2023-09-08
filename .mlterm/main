@@ -53,3 +53,4 @@ termtype=xterm-256color
 # These colors seem to be here, while color is reserved for terminal colors
 fg_color = #bbbbbb
 bg_color = #020202
+mod_meta_mode = esc
