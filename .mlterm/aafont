@@ -1,10 +1,11 @@
 # DEFAULT = Hack Nerd Font Mono 15:110
-ISO10646_UCS4_1 = Hack Nerd Font Mono 15:110
+#ISO10646_UCS4_1 = Hack Nerd Font Mono 15:110
 
 # Fira code is an ugly font IMHO, but it's cool to see ligature support
 # (use the -otl option when starting mlterm, or 'use_ot_layout' in config)
-#ISO10646_UCS4_1 = Fira Code 15:110
-
+ISO10646_UCS4_1 = Fira Code 15:100
+use_ot_layout = true
+font_features = "liga, ss01, ss02, ss03, ss05"
 # mlterm seems to work top to bottom, stopping at the first match. So we can
 # put overrides here at the top, preserving the copy/paste process we use below
 #

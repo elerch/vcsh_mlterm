@@ -17,6 +17,8 @@ use_anti_alias = true
 # However, cairo display is really wonky
 type_engine = xft
 
+use_ot_layout = true
+ot_features = "ss01, ss02, ss03, ss05"
 # mlterm does not use Ctrl-Shift-C, but rather copies to PRIMARY
 # on selection. If use_clipboard, it also copies to CLIPBOARD. Without the
 # keyboard shortcut, I find turning this on to be more useful
